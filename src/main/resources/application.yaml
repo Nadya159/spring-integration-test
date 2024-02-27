@@ -1,0 +1,18 @@
+db:
+  url: jdbc:postgresql://localhost:5433/test_users
+  username: postgres
+  password: erth
+  driver: PostgresDriver
+
+  pool:
+    size: 12
+    timeout: 10
+
+spring.profiles.active: prod
+
+logging:
+  level:
+    root: info
+  file:
+    name: by.javaGuru.log
+    path: /
