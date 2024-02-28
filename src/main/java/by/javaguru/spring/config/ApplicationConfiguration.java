@@ -10,7 +10,7 @@ import java.sql.Connection;
 @Configuration
 public class ApplicationConfiguration {
     @Bean
-    @Profile("prod")
+    @Profile("prod|test")
     @Scope(BeanDefinition.SCOPE_SINGLETON)
     public Connection connectionPoolProd(@Value("${db.url}") String url,
                                          @Value("${db.username}") String username,

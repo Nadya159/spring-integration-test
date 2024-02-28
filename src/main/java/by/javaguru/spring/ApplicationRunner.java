@@ -18,10 +18,7 @@ public class ApplicationRunner {
         var userService = context.getBean("userService", UserService.class);
         var user = userService.findById(2);
         System.out.println(user);
-        //userService.create(new UserCreateDto(null, "test@gmail.com"));
+        //userService.create(new UserCreateDto(null, "test@gmail.com"));               //для проверки валидации на null
         userService.create(new UserCreateDto("testCreate", "test@gmail.com"));
-
-
     }
-
 }

@@ -1,0 +1,10 @@
+db:
+  pool:
+    size: 5
+
+logging:
+  level:
+    root: info
+  file:
+    name: by.javaGuruTest.log
+    path: /
